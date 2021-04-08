@@ -136,10 +136,10 @@ $vscode.location                 = New-Object System.Drawing.Point(751,19)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $test                            = New-Object system.Windows.Forms.Button
-$test.text                            = "Test"
+$test.text                       = "Test"
 $test.width                      = 150
 $test.height                     = 30
-$test.location                   = New-Object System.Drawing.Point(751,105)
+$test.location                   = New-Object System.Drawing.Point(751,0)
 $test.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Label2                          = New-Object system.Windows.Forms.Label
@@ -423,7 +423,7 @@ $lightmode.location              = New-Object System.Drawing.Point(417,45)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2,$test))
+$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$test))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
