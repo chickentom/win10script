@@ -142,6 +142,13 @@ $discord.height                  = 30S
 $discord.location                = New-Object System.Drawing.Point(918,19)
 $discord.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
+$libreoffice                        = New-Object system.Windows.Forms.Button
+$libreoffice.text                    = "LibreOffice"
+$libreoffice.width                   = 150
+$libreoffice.height                  = 30S
+$libreoffice.location                = New-Object System.Drawing.Point(918,61)
+$libreoffice.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "(Chocolatey Required for installs)"
 $Label2.AutoSize                 = $true
@@ -457,6 +464,12 @@ $gchrome.Add_Click({
 $discord.Add_Click({ 
     Write-Host "Installing Discord"
     choco install discord -y
+	$wshell.Popup("Operation Completed",0,"Done",0x0)
+})
+
+$libreoffice.Add_Click({ 
+    Write-Host "Installing LibreOffice"
+    choco install libreoffice-fresh -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
