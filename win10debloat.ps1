@@ -139,7 +139,7 @@ $test                            = New-Object system.Windows.Forms.Button
 $test.text                       = "Test"
 $test.width                      = 150
 $test.height                     = 30
-$test.location                   = New-Object System.Drawing.Point(918,19)
+$test.location                   = New-Object System.Drawing.Point(918,61)
 $test.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Label2                          = New-Object system.Windows.Forms.Label
@@ -456,7 +456,7 @@ $gchrome.Add_Click({
 
 $test.Add_Click({ 
     Write-Host "Installing test"
-    choco install googlechrome -y
+    choco install test -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
