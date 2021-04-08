@@ -138,7 +138,7 @@ $vscode.Font                     = New-Object System.Drawing.Font('Microsoft San
 $test                            = New-Object system.Windows.Forms.Button
 $test.text                       = "Test"
 $test.width                      = 150
-$test.height                     = 30
+$test.height                     = 30S
 $test.location                   = New-Object System.Drawing.Point(918,19)
 $test.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
