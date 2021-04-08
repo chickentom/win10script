@@ -135,12 +135,12 @@ $vscode.height                   = 30
 $vscode.location                 = New-Object System.Drawing.Point(751,19)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$discord                            = New-Object system.Windows.Forms.Button
-$discord.text                       = "Discord"
-$discord.width                      = 150
-$discord.height                     = 30S
-$discord.location                   = New-Object System.Drawing.Point(918,19)
-$discord.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$discord                         = New-Object system.Windows.Forms.Button
+$discord.text                    = "Discord"
+$discord.width                   = 150
+$discord.height                  = 30S
+$discord.location                = New-Object System.Drawing.Point(918,19)
+$discord.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "(Chocolatey Required for installs)"
@@ -222,7 +222,7 @@ $onedrive.Font                   = New-Object System.Drawing.Font('Microsoft San
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 158
 $Panel3.width                    = 440
-$Panel3.location                 = New-Object System.Drawing.Point(601,293)
+$Panel3.location                 = New-Object System.Drawing.Point(901,293)
 
 $Label4                          = New-Object system.Windows.Forms.Label
 $Label4.text                     = "Security"
