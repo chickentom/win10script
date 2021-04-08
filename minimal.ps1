@@ -37,6 +37,7 @@ $tweaks = @(
 	"InstallVLC",
 	"InstallAdobe",
 	"InstallBrave",
+	"InstallTest"
 	"ChangeDefaultApps",
 
 	### Windows Apps
@@ -281,6 +282,29 @@ Function InstallNotepadplusplus {
 
 Function InstallVLC {
 	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
+}
+
+Function InstallTest {
+	do
+ {
+    Clear-Host
+    Write-Host "================ Do You Want to Install Discord? ================"
+    Write-Host "Y: Press 'Y' to do this."
+    Write-Host "2: Press 'N' to skip this."
+	Write-Host "Q: Press 'Q' to stop the entire script."
+    $selection = Read-Host "Please make a selection"
+    switch ($selection)
+    {
+    'y' { 
+		Invoke-WebRequest -Uri "https://discord.com/api/download?platform=win" -OutFile $env:USERPROFILE\Downloads\brave.exe
+		~/Downloads/DiscordSetup.exe
+	}
+    'n' { Break }
+    'q' { Exit  }
+    }
+ }
+ until ($selection -match "y" -or $selection -match "n" -or $selection -match "q")
+	
 }
 
 Function InstallIrfanview {
