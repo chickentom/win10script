@@ -136,7 +136,7 @@ $vscode.location                 = New-Object System.Drawing.Point(751,19)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $discord                            = New-Object system.Windows.Forms.Button
-$discord.text                       = "Test"
+$discord.text                       = "Discord"
 $discord.width                      = 150
 $discord.height                     = 30S
 $discord.location                   = New-Object System.Drawing.Point(918,19)
