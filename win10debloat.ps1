@@ -222,10 +222,10 @@ $onedrive.Font                   = New-Object System.Drawing.Font('Microsoft San
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 158
 $Panel3.width                    = 440
-$Panel3.location                 = New-Object System.Drawing.Point(901,293)
+$Panel3.location                 = New-Object System.Drawing.Point(401,293)
 
 $Label4                          = New-Object system.Windows.Forms.Label
-$Label4.text                     = "Securityy"
+$Label4.text                     = "Security"
 $Label4.AutoSize                 = $true
 $Label4.width                    = 117
 $Label4.height                   = 25
