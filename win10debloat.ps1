@@ -135,12 +135,12 @@ $vscode.height                   = 30
 $vscode.location                 = New-Object System.Drawing.Point(751,19)
 $vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$test                            = New-Object system.Windows.Forms.Button
-$test.text                       = "Test"
-$test.width                      = 150
-$test.height                     = 30S
-$test.location                   = New-Object System.Drawing.Point(918,19)
-$test.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$discord                            = New-Object system.Windows.Forms.Button
+$discord.text                       = "Test"
+$discord.width                      = 150
+$discord.height                     = 30S
+$discord.location                   = New-Object System.Drawing.Point(918,19)
+$discord.Font                       = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "(Chocolatey Required for installs)"
@@ -423,7 +423,7 @@ $lightmode.location              = New-Object System.Drawing.Point(417,45)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$test))
+$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$discord))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -454,9 +454,9 @@ $gchrome.Add_Click({
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
-$test.Add_Click({ 
-    Write-Host "Installing test"
-    choco install test -y
+$discord.Add_Click({ 
+    Write-Host "Installing Discord"
+    choco install discord -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
