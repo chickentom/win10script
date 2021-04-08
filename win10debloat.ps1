@@ -142,12 +142,12 @@ $discord.height                  = 30S
 $discord.location                = New-Object System.Drawing.Point(918,19)
 $discord.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$libreoffice                        = New-Object system.Windows.Forms.Button
-$libreoffice.text                    = "LibreOffice"
-$libreoffice.width                   = 150
-$libreoffice.height                  = 30S
-$libreoffice.location                = New-Object System.Drawing.Point(918,61)
-$libreoffice.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$libreoffice                     = New-Object system.Windows.Forms.Button
+$libreoffice.text                = "LibreOffice"
+$libreoffice.width               = 150
+$libreoffice.height              = 30S
+$libreoffice.location            = New-Object System.Drawing.Point(918,61)
+$libreoffice.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "(Chocolatey Required for installs)"
@@ -232,7 +232,7 @@ $Panel3.width                    = 440
 $Panel3.location                 = New-Object System.Drawing.Point(401,293)
 
 $Label4                          = New-Object system.Windows.Forms.Label
-$Label4.text                     = "Security"
+$Label4.text                     = "Securityyy"
 $Label4.AutoSize                 = $true
 $Label4.width                    = 117
 $Label4.height                   = 25
